@@ -5,6 +5,7 @@
 ##      Open CV and Numpy integration        ##
 ###############################################
 
+#be happy
 #basic RealSense Camera setup
 import pyrealsense2 as rs
 import numpy as np
