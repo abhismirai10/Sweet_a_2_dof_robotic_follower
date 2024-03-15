@@ -1,4 +1,4 @@
-// two dof robotics follower, just servo check using potentio meter
+// servo control using a potentiometer
 #include <Servo.h>
 
 Servo yaw_servo;
