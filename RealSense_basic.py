@@ -1,6 +1,11 @@
+## License: Apache 2.0. See LICENSE file in root directory.
+## Copyright(c) 2015-2017 Intel Corporation. All Rights Reserved.
 
-#basic realsense camera module
+###############################################
+##      Open CV and Numpy integration        ##
+###############################################
 
+#basic RealSense Camera setup
 import pyrealsense2 as rs
 import numpy as np
 import cv2
@@ -67,5 +72,6 @@ try:
         cv2.waitKey(1)
 
 finally:
+
     # Stop streaming
     pipeline.stop()
