@@ -1,10 +1,11 @@
+#adject your port name where you have connected the arduino
 import pyrealsense2 as rs
 import numpy as np
 import cv2
 import serial
 
 # Setup serial connection
-ser = serial.Serial('/dev/ttyACM3', 9600)  # Adjust '/dev/ttyACM0' to your Arduino's port
+ser = serial.Serial('/dev/ttyACM0', 9600)  # Adjust '/dev/ttyACM0' to your Arduino's port
 
 #fuction to create Trackbar
 class TrackbarHandler:

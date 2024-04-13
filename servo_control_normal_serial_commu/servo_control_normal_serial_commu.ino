@@ -1,4 +1,8 @@
 // servo control using a serial communication
+// for eg Y120P120 
+// must have new line at the end
+// P after Y with no space
+
 #include <Servo.h>
 
 Servo yaw_servo;

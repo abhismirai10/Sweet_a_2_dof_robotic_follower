@@ -22,8 +22,8 @@ void setup() {
 void loop() {
   //potentiometer output is in the range of 0 to 1023
   // so convering that to [10, 170]  
-  int xy_pos = 10.0 + (160./1023.)*analogRead(pote_xy); //do not need whole 0 to 180 angle
-  int xz_pos = 10.0 + (160./1023.)*analogRead(pote_xz);
+  int xy_pos = 50.0 + (90./1023.)*analogRead(pote_xy); //do not need whole 0 to 180 angle
+  int xz_pos = 50.0 + (90./1023.)*analogRead(pote_xz);
   Serial.print("the yaw angle: ");
   Serial.print(xy_pos);
   Serial.println(" the pitch angle: ");
