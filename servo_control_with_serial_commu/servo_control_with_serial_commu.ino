@@ -21,8 +21,8 @@ void setup() {
 }
 
 void updateServo(Servo& servo, int& angle, int error) {
-  if (abs(error) > 15) { // Only adjust if error is significant
-    angle -= error / 38; // Example proportional control factor
+  if (abs(error) > 2) { // Only adjust if error is significant
+    angle -= error / 30; // Example proportional control factor
     angle = constrain(angle, 60, 120); // Constrain angle to prevent over-rotation
     servo.write(angle);
   }
