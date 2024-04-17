@@ -1,3 +1,4 @@
+//here communication is 120,90 just that yaw,pitch 
 
 #include <Servo.h>
 
@@ -22,7 +23,7 @@ void setup() {
 void updateServo(Servo& servo, int& angle, int error) {
   if (abs(error) > 15) { // Only adjust if error is significant
     angle -= error / 38; // Example proportional control factor
-    angle = constrain(angle, 30, 150); // Constrain angle to prevent over-rotation
+    angle = constrain(angle, 60, 120); // Constrain angle to prevent over-rotation
     servo.write(angle);
   }
 }
