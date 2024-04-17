@@ -12,7 +12,7 @@ int pitch_angle = 90;
 #define xz_servo 10
 
 unsigned long previousMillis = 0; // will store last time servo was updated
-const long interval = 30;        // interval at which to update servo (milliseconds)
+const long interval = 100;        // interval at which to update servo (milliseconds)
 
 void setup() {
   Serial.begin(9600);
