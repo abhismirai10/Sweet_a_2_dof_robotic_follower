@@ -34,11 +34,11 @@ void loop() {
       int pitchPosition = command.substring(pPos + 1).toInt();
 
       // Set servo positions if within valid range
-      if (yawPosition >= 10 && yawPosition <= 170) 
+      if (yawPosition >= 60 && yawPosition <= 120) 
       {
         yaw_servo.write(yawPosition);
       }
-      if (pitchPosition >= 10 && pitchPosition <= 170) 
+      if (pitchPosition >= 60 && pitchPosition <= 120) 
       {
         pitch_servo.write(pitchPosition);
       }

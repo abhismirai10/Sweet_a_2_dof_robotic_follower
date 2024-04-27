@@ -1,3 +1,4 @@
+//here communication is 120,90 just that yaw,pitch 
 
 #include <Servo.h>
 
@@ -11,7 +12,7 @@ int pitch_angle = 90;
 #define xz_servo 10
 
 unsigned long previousMillis = 0; // will store last time servo was updated
-const long interval = 30;        // interval at which to update servo (milliseconds)
+const long interval = 100;        // interval at which to update servo (milliseconds)
 
 void setup() {
   Serial.begin(9600);
@@ -20,9 +21,9 @@ void setup() {
 }
 
 void updateServo(Servo& servo, int& angle, int error) {
-  if (abs(error) > 15) { // Only adjust if error is significant
-    angle -= error / 38; // Example proportional control factor
-    angle = constrain(angle, 30, 150); // Constrain angle to prevent over-rotation
+  if (abs(error) > 2) { // Only adjust if error is significant
+    angle -= error / 30; // Example proportional control factor
+    angle = constrain(angle, 60, 120); // Constrain angle to prevent over-rotation
     servo.write(angle);
   }
 }
