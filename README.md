@@ -2,6 +2,9 @@
 
 This project demonstrates a 2 Degrees of Freedom (2-DOF) pan and tilt mechanism designed to track and follow objects, such as faces, using deep learning. The system utilizes an Arduino for servo control, a main PC for object detection and localization, and a RealSense camera for capturing video streams.
 
+View
+<img width="1138" alt="Screenshot 2024-06-08 at 10 45 57 AM" src="https://github.com/abhismirai10/Sweet_a_2_dof_robotic_follower/assets/121724635/ec9d52c2-792f-4823-a581-163a11837def">
+
 ## Table of Contents
 - [Introduction](#introduction)
 - [Features](#features)
